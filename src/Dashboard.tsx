@@ -13,13 +13,13 @@ const Dashboard: React.FC = () => {
         <TopPanel />
       </Header>
       <Content>
-        <Layout>
-          <Layout.Sider width="50%" style={{ background: '#fff', borderRight: '1px solid #f0f0f0' }}>
+        <Layout style={{ height: '100%' }}>
+          <Layout.Sider collapsible width="50%" style={{ background: '#fff', borderRight: '1px solid #f0f0f0' }}>
             <LeftPanel />
           </Layout.Sider>
-          <Layout.Content style={{ background: '#fff' }}>
+          <Layout.Sider collapsible width="50%" style={{ background: '#fff' }}>
             <RightPanel />
-          </Layout.Content>
+          </Layout.Sider>
         </Layout>
       </Content>
     </Layout>
