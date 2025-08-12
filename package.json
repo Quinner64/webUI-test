@@ -4,5 +4,12 @@
     "ag-grid-community": "^34.1.1",
     "ag-grid-react": "^34.1.1",
     "antd": "^5.27.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Error: no lint specified\" && exit 1",
+    "format": "echo \"Error: no format specified\" && exit 1"
   }
 }
