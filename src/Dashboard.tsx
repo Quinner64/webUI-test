@@ -1,26 +1,39 @@
 import React from 'react';
-import { Layout } from 'antd';
+import RGL, { WidthProvider } from 'react-grid-layout';
 import TopPanel from './components/TopPanel';
 import LeftPanel from './components/LeftPanel';
 import RightPanel from './components/RightPanel';
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
 
-const { Header, Content, Sider } = Layout;
+constGridLayout = WidthProvider(RGL);
 
 const Dashboard: React.FC = () => {
+  const layout = [
+    { i: 'top', x: 0, y: 0, w: 12, h: 2, isResizable: false },
+    { i: 'left', x: 0, y: 2, w: 6, h: 5 },
+    { i: 'right', x: 6, y: 2, w: 6, h: 5 },
+  ];
+
   return (
-    <Layout style={{ minHeight: '100vh' }}>
-      <Header style={{ padding: 0 }}>
+    <GridLayout
+      className="layout"
+      layout={layout}
+      cols={12}
+      rowHeight={30}
+      isDraggable
+      isResizable
+    >
+      <div key="top" style={{ border: '1px solid #ccc' }}>
         <TopPanel />
-      </Header>
-      <Layout>
-        <Sider width="50%" style={{ padding: '10px' }}>
-          <LeftPanel />
-        </Sider>
-        <Content style={{ padding: '10px' }}>
-          <RightPanel />
-        </Content>
-      </Layout>
-    </Layout>
+      </div>
+      <div key="left" style={{ border: '1px solid #ccc' }}>
+        <LeftPanel />
+      </div>
+      <div key="right" style={{ border: '1p solid #ccc' }}>
+        <RightPanel />
+      </div>
+    </GridLayout>
   );
 };
 
