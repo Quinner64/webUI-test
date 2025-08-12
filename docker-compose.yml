@@ -1,6 +1,15 @@
 version: '3.8'
+version: '3.8'
 services:
   web:
     build: .
     ports:
       - "8080:80"
+    restart: unless-stopped
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+
