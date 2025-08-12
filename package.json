@@ -11,5 +11,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "echo \"Error: no lint specified\" && exit 1",
     "format": "echo \"Error: no format specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.1"
   }
 }
