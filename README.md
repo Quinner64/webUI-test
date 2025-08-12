@@ -1,10 +1,1 @@
--e # Quickstart
-
-To get started with this project, follow these steps:
-
-```bash
-git clone <repository-url>
-cd <repository-name>
-yarn install
-yarn dev
-```
+# Quickstart\n\nTo get started with this project, follow these steps:\n\n```bash\ngit clone <repository-url>\ncd <repository-name>\nyarn install\nyarn dev\n```\n
