@@ -6,7 +6,7 @@ import RightPanel from './components/RightPanel';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 
-constGridLayout = WidthProvider(RGL);
+const GridLayout = WidthProvider(RGL);
 
 const Dashboard: React.FC = () => {
   const layout = [
@@ -30,7 +30,7 @@ const Dashboard: React.FC = () => {
       <div key="left" style={{ border: '1px solid #ccc' }}>
         <LeftPanel />
       </div>
-      <div key="right" style={{ border: '1p solid #ccc' }}>
+      <div key="right" style={{ border: '1px solid #ccc' }}>
         <RightPanel />
       </div>
     </GridLayout>
